@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f6f1" />
+    <meta name="description" content="A little hotel magic, delivered. Order the Cravy Hotel favourites you love, made fresh and brought to your door." />
+    <title>Cravy Hotel — Good food, good mood.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="announcement"><span>✦</span> A little hotel magic, delivered to your door <span>✦</span></div>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Cravy Hotel home"><span class="brand-mark">C<span>✳</span></span><span class="brand-name">cravy<small>HOTEL & KITCHEN</small></span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="#menu">Our menu</a><a href="#story">Our story</a><a href="#delivery">Delivery</a></nav>
+      <button class="cart-button" id="open-cart" aria-label="Open shopping bag">Your bag <span class="bag-icon">♧</span><span class="cart-count" id="cart-count">0</span></button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> GOOD FOOD. GOOD MOOD.</div>
+          <h1>Made with love.<br /><em>Delivered with joy.</em></h1>
+          <p>From our hotel kitchen to your happy place. Order something wonderful today.</p>
+          <a class="primary-button" href="#menu">Explore the menu <span>↗</span></a>
+          <div class="hero-note"><span class="note-stars">★★★★★</span><span>Loved by our neighbours</span><span class="note-separator">·</span><span>Fresh, always</span></div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image"></div>
+          <div class="hero-sticker"><span>HOTEL<br />FAVOURITE</span><span class="sticker-star">✳</span></div>
+          <div class="hero-caption"><span class="caption-dot"></span> A taste of something special</div>
+        </div>
+        <div class="hero-scribble" aria-hidden="true">made fresh, just for you</div>
+      </section>
+
+      <section class="promise-strip" id="delivery">
+        <div><span class="promise-icon">✿</span><span><strong>Made fresh to order</strong><small>Never rushed, always lovely</small></span></div>
+        <span class="promise-divider"></span>
+        <div><span class="promise-icon">⌁</span><span><strong>At your door in 30–45 min</strong><small>Good things are on their way</small></span></div>
+        <span class="promise-divider"></span>
+        <div><span class="promise-icon">♡</span><span><strong>A little extra care</strong><small>That’s the Cravy way</small></span></div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> SOMETHING FOR EVERY CRAVING</div><h2>A seat at our table.<br /><em>Wherever you are.</em></h2></div>
+          <p>Hotel-made favourites, lovingly prepared and ready to make your day. Prices use a placeholder conversion of KSh 130 per USD.</p>
+        </div>
+        <div class="menu-toolbar">
+          <div class="category-list" id="categories" aria-label="Filter menu categories"></div>
+          <label class="search-box"><span>⌕</span><input id="menu-search" type="search" placeholder="Find your favourite..." aria-label="Search menu" /></label>
+        </div>
+        <div class="menu-grid" id="menu-grid"><div class="menu-loading">Setting the table...</div></div>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="story-image"></div>
+        <div class="story-copy"><div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT US</div><h2>Hospitality is<br /><em>our love language.</em></h2><p>We started at the Cravy Hotel with one simple idea: everyone deserves a meal that feels like being welcomed in. Now we’re bringing that same warmth, and a little something delicious, right to your door.</p><a class="text-link" href="#menu">Come hungry <span>→</span></a></div>
+      </section>
+    </main>
+
+    <footer><a class="brand footer-brand" href="#"><span class="brand-mark">C<span>✳</span></span><span class="brand-name">cravy<small>HOTEL & KITCHEN</small></span></a><span>Made with a little extra love. © 2026 Cravy Hotel.</span><a href="mailto:hello@cravyhotel.example">Say hello ↗</a></footer>
+
+    <div class="overlay" id="overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Your shopping bag" aria-hidden="true">
+      <div class="drawer-header"><div><span class="eyebrow">THE GOOD STUFF</span><h2>Your bag <span id="drawer-count"></span></h2></div><button class="icon-button" id="close-cart" aria-label="Close bag">×</button></div>
+      <div class="cart-content" id="cart-content"></div>
+      <div class="cart-footer" id="cart-footer"></div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
